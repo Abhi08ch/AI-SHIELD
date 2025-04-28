@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    background-color: #050A1E;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #00e6ff;
+    text-shadow: 0px 0px 20px rgba(0, 230, 255, 0.9);
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0px 0px 20px rgba(0, 230, 255, 0.9); }
+    to { text-shadow: 0px 0px 30px rgba(0, 230, 255, 1); }
+}
+
+/* Card Style */
+.card {
+    background: linear-gradient(135deg, #111836, #1c2546);
+    box-shadow: 0 0 20px rgba(0, 230, 255, 0.4);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 230, 255, 0.7);
+    transform: scale(1.02) perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background: #0A122A;
+    border: 2px solid #00e6ff;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 15px rgba(0, 230, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(0, 230, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #008cff, #00e6ff);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 18px rgba(0, 230, 255, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00e6ff, #008cff);
+    box-shadow: 0px 0px 25px rgba(0, 230, 255, 0.9);
+    transform: scale(1.1);
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    padding: 12px;
+    border: 2px solid #00e6ff;
+    border-radius: 10px;
+    background: #12264A; /* Updated background */
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* Form Sections */
+.section {
+    padding: 25px;
+    background: linear-gradient(135deg, #161D3B, #222C5A);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 230, 255, 0.4);
+}
+
+.section h2 {
+    color: #00e6ff;
+    margin-bottom: 18px;
+    text-shadow: 0px 0px 15px rgba(0, 230, 255, 0.7);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Animated Glow Effects */
+@keyframes neonPulse {
+    0% { box-shadow: 0px 0px 15px rgba(0, 230, 255, 0.5); }
+    50% { box-shadow: 0px 0px 25px rgba(0, 230, 255, 0.8); }
+    100% { box-shadow: 0px 0px 15px rgba(0, 230, 255, 0.5); }
+}
+
+.neon-border {
+    animation: neonPulse 1.5s infinite alternate;
+}
+
+input[type="datetime-local"],
+input[type="number"],
+input[type="file"] {
+    background: #12264A; /* Updated background color */
+    border: 2px solid #00e6ff;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 14px;
+    box-shadow: 0px 0px 15px rgba(0, 230, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="datetime-local"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(0, 230, 255, 0.8);
+    transform: scale(1.05);
+}
+/* Change background color of recommendation boxes */
+.recommendation-box {
+    background: #0A122A !important; /* Dark navy blue */
+    color: #ffffff !important; /* White text */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 230, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change background color of individual recommendations */
+.recommendation-box div {
+    background: #111836 !important; /* Darker shade */
+    color: #ffffff !important; /* Ensure text is visible */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* High Severity Label */
+.high-severity {
+    color: #ff4c4c !important; /* Bright red */
+    font-weight: bold;
+}
+
+/* Medium Severity Label */
+.medium-severity {
+    color: #ffcc00 !important; /* Yellow */
+    font-weight: bold;
+}
+
