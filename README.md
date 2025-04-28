@@ -120,3 +120,6 @@ Special thanks to:
 - The **scikit-learn** community for ML libraries.
 - The **Flask** framework documentation.
 - Open-source contributors and cybersecurity best practices references.
+
+## **Contact**
+Abhimanyu Chauhan -> abhimanyuc812@gmail.com
